@@ -20,7 +20,7 @@ module.exports = function(config) {
         autoWatch: false,
         singleRun: false,
 
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
 
         browsers: ['PhantomJS']
 
