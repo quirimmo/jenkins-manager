@@ -1,0 +1,26 @@
+{
+    "name": "jenkins-manager",
+    "version": "1.0.0",
+    "description": "Node application in order to interact with Jenkins and provide several shortcuts for executing operations directly from command line, and providing an api for implementing new features",
+    "bin": {
+        "test": "./bin/test.js"
+    },
+    "main": "./lib/index.js",
+    "preferGlobal": true,
+    "author": "Quirino Lo Russo",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/quirimmo/jenkins-manager.git"
+    },
+    "keywords": [
+        "jenkins",
+        "jenkins automation",
+        "jenkins sdk",
+        "jenkins api",
+        "node jenkins module",
+        "jenkins module"
+    ],
+    "devDependencies": {},
+    "dependencies": {}
+}
