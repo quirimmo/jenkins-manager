@@ -13,14 +13,24 @@ module.exports = function(config) {
             './lib/*.spec.js'
         ],
 
-        reporters: ['progress'],
+        reporters: ['progress', 'coverage'],
+
+        preprocessors: {
+            'lib/**/!(*.spec.js)': ['coverage']
+        },
+
+        // optionally, configure the reporter
+        coverageReporter: {
+            type: 'html',
+            dir: 'coverage/'
+        },
 
         port: 9876,
         colors: true,
-        autoWatch: false,
+        autoWatch: true,
         singleRun: false,
 
-        logLevel: config.LOG_DEBUG,
+        logLevel: config.LOG_INFO,
 
         browsers: ['PhantomJS']
 
