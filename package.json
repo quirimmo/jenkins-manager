@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "description": "Node application in order to interact with Jenkins and provide several shortcuts for executing operations directly from command line, and providing an api for implementing new features",
     "scripts": {
-        "test": "mocha lib/**/*.spec.js --reporter mochawesome"
+        "test": "mocha lib/**/*.spec.js --reporter mochawesome",
+        "test-watch": "mocha lib/**/*.spec.js --watch --reporter mochawesome"
     },
     "bin": {
         "test": "./bin/test.js"
