@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Node application in order to interact with Jenkins and provide several shortcuts for executing operations directly from command line, and providing an api for implementing new features",
     "scripts": {
-        "test": "karma start karma.config.js --single-run"
+        "test": "mocha lib/**/*.spec.js --reporter mochawesome"
     },
     "bin": {
         "test": "./bin/test.js"
@@ -26,12 +26,9 @@
     ],
     "devDependencies": {
         "chai": "^4.0.2",
-        "karma": "^1.7.0",
-        "karma-chai": "^0.1.0",
-        "karma-coverage": "^1.1.1",
-        "karma-mocha": "^1.3.0",
-        "karma-phantomjs-launcher": "^1.0.4",
+        "chai-as-promised": "^7.0.0",
         "mocha": "^3.4.2",
+        "mochawesome": "^2.3.0",
         "sinon": "^2.3.6"
     },
     "dependencies": {}
